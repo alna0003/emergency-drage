@@ -37,8 +37,50 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>DIN EMERGENCY</h2>
+          <form>
+            <!-- Navn og kontakt -->
+            <label for="name">Dit navn:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Din e-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- Valg af nødsituation -->
+            <p>Hvilken nødsituation er det?</p>
+
+            <label for="Drageattack"> Drage attack</label>
+            <input
+              type="radio"
+              id="Drageattack"
+              name="situation"
+              value="Drageattack"
+            />
+
+            <label for="brand">Brand</label>
+            <input type="radio" id="brand" name="situation" value="brand" />
+
+            <label for="ulykke">Ulykke</label>
+            <input type="radio" id="ulykke" name="situation" value="ulykke" />
+
+            <!-- Vælg kategori -->
+            <label for="severity">Vurdering af alvorlighed:</label>
+            <select id="severity" name="severity">
+              <option value="Lav">Ikke slemt</option>
+              <option value="Middel">Slemt</option>
+              <option value="Høj">Meget slemt</option>
+            </select>
+
+            <label for="description">Beskriv situationen:</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              cols="50"
+            ></textarea>
+
+            <button type="submit">Send Rapport</button>
+          </form>
         </article>
         <form id="webform"></form>
       </section>
