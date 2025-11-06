@@ -1,0 +1,33 @@
+/* Jeg tager min buttom id og sætter dem i centrum */
+#softspots,
+#dragen,
+#mave {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: top;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+/* Jeg gør mine knapper flotte */
+#softspots,
+#dragen,
+#mave {
+  padding: 10px 20px;
+  background-color: #4f8d2d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#softspots:hover,
+#dragen:hover,
+#mave:hover {
+  background-color: #3e6b25; /* mørkere grøn ved hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
