@@ -1,7 +1,12 @@
+.info-graphic svg {
+  width: 100%; /* Eller en bestemt pixel-størrelse, fx 600px */
+  height: auto; /* Bevarer proportionerne */
+}
+
 /* Jeg tager min buttom id og sætter dem i centrum */
 #softspots,
 #dragen,
-#mave {
+#historie {
   display: inline-block;
   margin-right: 1rem;
   vertical-align: top;
@@ -12,7 +17,7 @@
 /* Jeg gør mine knapper flotte */
 #softspots,
 #dragen,
-#mave {
+#historie {
   padding: 10px 20px;
   background-color: #4f8d2d;
   color: white;
@@ -26,7 +31,7 @@
 
 #softspots:hover,
 #dragen:hover,
-#mave:hover {
+#historie:hover {
   background-color: #3e6b25; /* mørkere grøn ved hover */
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
