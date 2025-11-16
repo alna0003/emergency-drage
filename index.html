@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -33,56 +34,165 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="img/warning.jpg" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>DRAGON</h1>
+          <p class="sub">Protect your planet</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/blaa.krystaller.jpg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Mystiske Krystaller</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              "Videnskabsfolk har opdaget mærkelige krystaller omkring dragens
+              landingssted - de pulserer med en ukendt energi...
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details class="cta_btn">
+              <summary>Se mere</summary>
+              <p>
+                Videnskabsfolk har opdaget mærkelige krystaller omkring dragens
+                landingssted - de pulserer med en ukendt energi og bliver
+                varmere når dragen nærmer sig. Kristallerne synes at reagere på
+                dragens tilstedeværelse og udsender en svag, blålig glød om
+                natten. Forskere advarer mod at røre ved dem, da deres
+                egenskaber stadig er ukendte.
+              </p>
+            </details>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/mystisk-dyr.jpg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Underlig Dyreadfærd</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Lokale dyrearter opfører sig underligt - fugle flyver i perfekte
+              cirkler omkring dragen...
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details class="cta_btn">
+              <summary>Se mere</summary>
+              <p>
+                Lokale dyrearter opfører sig underligt - fugle flyver i perfekte
+                cirkler omkring dragen, og planter vokser unaturligt hurtigt i
+                dens spor. Hvad vil dragen egentlig her? Biologer har
+                observeret, at dyr ikke flygter fra dragen som forventet, men i
+                stedet tiltrækkes af dens tilstedeværelse. Dette tyder på, at
+                dragen måske ikke er så fjendtlig som først antaget.
+              </p>
+            </details>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Når Dragen vreds: Den dødelige pris for at provokere</h3>
+          <p>
+            En frygtindgydende, ildspyende drage midt i en ødelagt landsby, som
+            understregning af faren ved at vække dragen.
+          </p>
+          <img src="img/dragen.nyhed1.jpg" alt="news_img" />
+          <button class="cta_btn" data-popup="popup1">
+            Læs mere om Dragen
+          </button>
+          <!-- Når man skal lave knapperne med pop-up skal jeg huske og lave de forskellige id'er men må gerne have den samme klasse. ellers kan min js ikke finde rundt. Derfor har jeg lavet mine id'er til popup1, popup2 osv. -->
+          <div id="popup1" class="popup">
+            <div class="popup-content">
+              <span class="close-btn" data-close="popup1">&times;</span>
+              <!-- Bruger span til at indramme eller gruppere tekst eller andet indhold -->
+              <!-- Jeg bruger data den kan gemme informationen om hvilken popup der skal åbnes så JS ved hvilken rigtig knap skal åbnes når der klikkes. -->
+              <h2>Når Dragen vreds: Den dødelige pris for at provokere</h2>
+              <p>
+                Drager er majestætiske væsner, men deres vrede er
+                frygtindgydende. Når en drage føler sig truet eller provokeret,
+                kan konsekvenserne være katastrofale.
+              </p>
+              <p>
+                Historien har vist os gang på gang, at det at vække en sovende
+                drage eller true dens territorium kan føre til ødelæggelse af
+                hele landsbyer. Dragens ildåndedræt kan nå temperaturer på over
+                1000 grader, og dens kløer kan rive gennem de stærkeste
+                materialer.
+              </p>
+              <p>
+                Eksperter anbefaler at holde en sikker afstand på mindst 500
+                meter fra kendte dragebosteder og aldrig forsøge at nærme sig en
+                drage uden professionel vejledning.
+              </p>
+            </div>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>
+            Voldsom vrede: Hvor mange har mistet livet til dragens ildudbrud
+          </h3>
+          <img src="img/kirkegaard.jpg" alt="news_img" />
+          <button class="cta_btn" data-popup="popup2">
+            Læs mere om Dragepleje
+          </button>
+          <div id="popup2" class="popup">
+            <div class="popup-content">
+              <span class="close-btn" data-close="popup2">&times;</span>
+              <!-- Bruger span til at indramme eller gruppere tekst eller andet indhold -->
+              <h2>
+                Voldsom vrede: Hvor mange har mistet livet til dragens ildudbrud
+              </h2>
+              <p>
+                De fleste ulykker sker, når mennesker utilsigtet krydser ind på
+                dragens territorium eller forsøger at stjæle fra deres skatte.
+                Drager er ekstremt territoriale væsner og vil forsvare deres
+                hjem med al deres magt.
+              </p>
+              <p>
+                Myndighederne opfordrer alle til at respektere dragens
+                territorium og altid følge de officielle tips for sikker adfærd
+                i drageområder.
+              </p>
+            </div>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Sådan Fodrer Du Din Drage: En Guide til Dragepleje</h3>
+          <img src="img/drage-menneske.jpg" alt="news_img" />
+          <button class="cta_btn" data-popup="popup3">
+            Læs mere om Dragepleje
+          </button>
+          <div id="popup3" class="popup">
+            <div class="popup-content">
+              <span class="close-btn" data-close="popup3">&times;</span>
+              <!-- Bruger span til at indramme eller gruppere tekst eller andet indhold -->
+              <h2>Sådan Fodrer Du Din Drage: En Guide til Dragepleje</h2>
+              <p>
+                At have en drage som følgesvend kræver stort ansvar og
+                dedikation. Denne guide giver dig de grundlæggende principper
+                for korrekt dragepleje.
+              </p>
+              <p>
+                <strong>Kost:</strong>
+                Drager har brug for en varieret kost bestående primært af kød.
+                En voksen drage skal have mindst 50 kg kød dagligt. Får, køer og
+                geder er ideelle, men undgå at fodre din drage med menneskeføde.
+              </p>
+              <p>
+                <strong>området:</strong> Dragen har brug for et rummeligt
+                område med adgang til både sol og skygge. En grotte eller stor
+                lade er ideelt. Sørg for, at området er sikkert og fri for
+                farer.
+              </p>
+              <p>
+                <strong>Træning:</strong> Daglig motion er essentiel. Lad din
+                drage flyve mindst en time om dagen, men sørg for at det sker i
+                godkendte luftrum væk fra beboede områder.
+              </p>
+              <p>
+                <strong>Sundhed:</strong> Regelmæssige veterinærkontroller er
+                vigtige. Hold øje med tegn på sygdom som mat adfærd, manglende
+                appetit eller svag ildåndedræt.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
     </main>
@@ -114,6 +224,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/index.js"></script>
   </body>
 </html>
