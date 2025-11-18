@@ -1,5 +1,5 @@
 #head-txt {
-  fill: rgb(54, 54, 54);
+  fill: #79a762;
 }
 .info-graphic,
 .info-text {
@@ -39,4 +39,9 @@
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
+}
+
+#instruction .info-graphic svg {
+  width: 100%; /* eller procent som 100% */
+  height: auto; /* bevar aspektforholdet */
 }
