@@ -11,7 +11,7 @@
   --font-logotype-size: 2.5rem;
 
   /* Global menu */
-  --color-menu-bg: #ffa680;
+  --color-menu-bg: #79a762;
   /* Links */
   --color-link-bg: #fffae2;
   --color-link-hover: #fff; /* used */
@@ -43,7 +43,7 @@
   --color-news-bg: #fffae2;
   --color-news-bg-inverted: #dbe2f5;
   --color-cta-newscard-bg: #79a762;
-  --color-cta-newscard-bg-inverted: #ffa680;
+  --color-cta-newscard-bg-inverted: #79a762;
 
   /* Fonts */
   --font-family-sans: "rubrik", ui-sans-serif;
@@ -63,7 +63,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #2d1703e4;
+  --color-info-bg: #79a762c5;
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #109025;
 }

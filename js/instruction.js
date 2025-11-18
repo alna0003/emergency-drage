@@ -6,7 +6,7 @@ function softspotsF() {
   console.log("softspotsF button clicked");
   document.querySelector(".info-text h2").innerText = "Softspots";
   document.querySelector(".info-text p").innerText =
-    "Her får du mere viden omkring Dragens softspots og hvordan du bedst håndterer dem i en nødsituation.";
+    "Drager er majestætiske og mystiske væsner, som ofte portrætteres som frygtindgydende og nærmest uovervindelige. Men selv de største mest frygtindgydende drager har deres svagheder eller bløde punkter, som kan udnyttes til at komme på god fod med dem. Dragen har en softspots for smukke melodier. En blid sang kan få selv den mest vrede drage til at falde til ro. Prøv at synge lavt og roligt for at berolige dragen og skabe en forbindelse baseret på musikalsk forståelse.";
 }
 
 // -------------------------------
@@ -16,7 +16,7 @@ function dragenF() {
   console.log("dragenF button clicked");
   document.querySelector(".info-text h2").innerText = "Om dragen";
   document.querySelector(".info-text p").innerText =
-    "Her får du mere viden omkring Dragen.";
+    "Dragen har et stærkt temperament og kan blive sur eller irriteret, hvis nogen bryder dens grænser. Den reagerer bedst, når man taler roligt og respektfuldt til den. Hvis den først bliver vred, kan dens hale begynde at gløde svagt som advarsel.";
 }
 // -------------------------------
 document.querySelector("#historie").addEventListener("click", historieF);
